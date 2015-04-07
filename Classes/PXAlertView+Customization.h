@@ -26,4 +26,6 @@
 - (void)setCancelButtonFont:(UIFont *)font;
 - (void)setOtherButtonFont:(UIFont *)font;
 
+- (void)setCancelButtonBackgroundColor:(UIColor *)color titleColor:(UIColor *)titleColor;
+- (void)setOtherButtonBackgroundColor:(UIColor *)color titleColor:(UIColor *)titleColor;
 @end

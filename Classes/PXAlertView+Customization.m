@@ -87,6 +87,13 @@
     [self.cancelButton addTarget:self action:@selector(setCustomBackgroundColorForButton:) forControlEvents:UIControlEventTouchDragEnter];
 }
 
+- (void)setCancelButtonBackgroundColor:(UIColor *)color titleColor:(UIColor *)titleColor
+{
+    [self setCancelButtonBackgroundColor:color];
+    [self.cancelButton setBackgroundColor:color];
+    [self.cancelButton setTitleColor:titleColor forState:UIControlStateNormal];
+}
+
 - (UIColor *)cancelButtonBackgroundColor
 {
     return objc_getAssociatedObject(self, kCancelBGKey);
@@ -97,6 +104,13 @@
     objc_setAssociatedObject(self, kOtherBGKey, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self.otherButton addTarget:self action:@selector(setCustomBackgroundColorForButton:) forControlEvents:UIControlEventTouchDown];
     [self.otherButton addTarget:self action:@selector(setCustomBackgroundColorForButton:) forControlEvents:UIControlEventTouchDragEnter];
+}
+
+- (void)setOtherButtonBackgroundColor:(UIColor *)color titleColor:(UIColor *)titleColor
+{
+    [self setOtherButtonBackgroundColor:color];
+    [self.otherButton setBackgroundColor:color];
+    [self.otherButton setTitleColor:titleColor forState:UIControlStateNormal];
 }
 
 - (UIColor *)otherButtonBackgroundColor
