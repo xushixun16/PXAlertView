@@ -69,6 +69,7 @@ static const CGFloat AlertViewLineLayerWidth = 0.5;
         
         appearance.messageLabel.font = [UIFont systemFontOfSize:15];
         appearance.messageLabel.textColor = [UIColor whiteColor];
+        appearance.messageLabel.textAlignment = NSTextAlignmentCenter;
         
         appearance.cancelButton.titleLabel.font = [UIFont systemFontOfSize:17];
         appearance.otherButton.titleLabel.font = [UIFont systemFontOfSize:17];
@@ -180,7 +181,7 @@ static const CGFloat AlertViewLineLayerWidth = 0.5;
         _messageLabel.text = message;
         _messageLabel.backgroundColor = [UIColor clearColor];
         _messageLabel.textColor = [UIColor whiteColor];
-        _messageLabel.textAlignment = NSTextAlignmentCenter;
+        _messageLabel.textAlignment = [PXAlertView appearance].messageLabel.textAlignment;
         _messageLabel.font = [PXAlertView appearance].messageLabel.font;
         _messageLabel.lineBreakMode = NSLineBreakByWordWrapping;
         _messageLabel.numberOfLines = 0;

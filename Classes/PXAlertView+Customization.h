@@ -18,6 +18,7 @@
 
 - (void)setMessageColor:(UIColor *)color;
 - (void)setMessageFont:(UIFont *)font;
+- (void)setMessageAlignment:(NSTextAlignment)alignment;
 
 - (void)setCancelButtonBackgroundColor:(UIColor *)color;
 - (void)setOtherButtonBackgroundColor:(UIColor *)color;

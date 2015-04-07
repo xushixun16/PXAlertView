@@ -52,6 +52,11 @@
     self.messageLabel.font = font;
 }
 
+- (void)setMessageAlignment:(NSTextAlignment)alignment
+{
+    self.messageLabel.textAlignment = alignment;
+}
+
 - (void)setCancelButtonFont:(UIFont *)font
 {
     [self.cancelButton.titleLabel setFont:font];
