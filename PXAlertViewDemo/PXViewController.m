@@ -69,8 +69,13 @@
     [alert setTitleFont:[UIFont fontWithName:@"Zapfino" size:15.0f]];
     [alert setTitleColor:[UIColor darkGrayColor]];
     [alert setCancelButtonBackgroundColor:[UIColor redColor]];
+    [alert setupGestures:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(log:)]];
 }
 
+- (void)log:(UIGestureRecognizer *)gesture
+{
+    NSLog(@"TAP");
+}
 
 - (IBAction)showLargeAlertView:(id)sender
 {

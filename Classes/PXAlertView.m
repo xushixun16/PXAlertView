@@ -298,6 +298,13 @@ static const CGFloat AlertViewLineLayerWidth = 0.5;
     [self.backgroundView addGestureRecognizer:self.tap];
 }
 
+- (void)setupGestures:(UIGestureRecognizer *)gesture
+{
+    [self.backgroundView setUserInteractionEnabled:YES];
+    [self.backgroundView setMultipleTouchEnabled:NO];
+    [self.backgroundView addGestureRecognizer:gesture];
+}
+
 - (void)resizeViews
 {
     CGFloat totalHeight = 0;

@@ -19,6 +19,8 @@ typedef void(^PXAlertViewCompletionBlock)(BOOL cancelled, NSInteger buttonIndex)
 
 + (instancetype)appearance;
 
+- (void)setupGestures:(UIGestureRecognizer *)gesture;
+
 + (instancetype)showAlertWithTitle:(NSString *)title;
 
 + (instancetype)showAlertWithTitle:(NSString *)title
