@@ -118,4 +118,13 @@
     return objc_getAssociatedObject(self, kOtherBGKey);
 }
 
+- (void)setFrame:(CGRect)rect
+{
+    self.alertView.frame = rect;
+}
+
+- (UIView *)alertView
+{
+    return self.alertView;
+}
 @end
