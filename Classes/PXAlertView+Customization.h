@@ -30,6 +30,4 @@
 - (void)setOtherButtonBackgroundColor:(UIColor *)color titleColor:(UIColor *)titleColor;
 
 - (void)setFrame:(CGRect)rect;
-
-- (UIView *)alertView;
 @end

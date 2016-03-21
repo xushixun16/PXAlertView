@@ -122,9 +122,4 @@
 {
     self.alertView.frame = rect;
 }
-
-- (UIView *)alertView
-{
-    return self.alertView;
-}
 @end
