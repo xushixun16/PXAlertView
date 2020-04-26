@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // test
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +40,7 @@
 
 - (IBAction)showSimpleAlertView:(id)sender
 {
+    
     [PXAlertView showAlertWithTitle:@"Hello World"
                             message:@"Oh my this looks like a nice message."
                         cancelTitle:@"Ok"
